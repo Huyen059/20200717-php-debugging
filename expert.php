@@ -64,7 +64,7 @@ $arr = [];
 
 function combineNames(string $str1 = "", string $str2 = "") : string {
     $params = [$str1, $str2];
-    foreach($params as $index => &$param) {
+    foreach($params as &$param) {
         if ($param === "") {
             $param = randomHeroName();
         }
