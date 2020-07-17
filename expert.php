@@ -146,9 +146,9 @@ new_exercise(10);
 $areTheseFruits = ['apple', 'bear', 'beef', 'banana', 'cherry', 'tomato', 'car'];
 $validFruits = ['apple', 'pear', 'banana', 'cherry', 'tomato'];
 //from here on you can change the code
-$length = count($areTheseFruits);
-for($i=0; $i < $length; $i++) {
-    if(!in_array($areTheseFruits[$i], $validFruits)) {
+
+for($i=0, $iMax = count($areTheseFruits); $i < $iMax; $i++) {
+    if(!in_array($areTheseFruits[$i], $validFruits, true)) {
         unset($areTheseFruits[$i]);
     }
 }
